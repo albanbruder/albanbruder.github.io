@@ -3,7 +3,7 @@ FROM busybox
 MAINTAINER Alban Bruder <mail@albanbruder.de>
 
 ADD index.html /www/index.html
-Add assets /www/assets
+ADD assets /www/assets
 
 EXPOSE 8000
 
