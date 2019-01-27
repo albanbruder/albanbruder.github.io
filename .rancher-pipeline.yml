@@ -1,8 +1,0 @@
-stages:
-- name: compile
-  steps:
-  - publishImageConfig:
-      dockerfilePath: ./Dockerfile
-      buildContext: .
-      tag: albanbruder/website
-timeout: 60
