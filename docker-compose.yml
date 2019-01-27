@@ -5,10 +5,8 @@ services:
     build: ./app
     container_name: website
     restart: unless-stopped
-    environment:
-      - VIRTUAL_HOST=albanbruder.de,www.albanbruder.de
-      - LETSENCRYPT_HOST=albanbruder.de,www.albanbruder.de
-      - LETSENCRYPT_EMAIL=admin@albanbruder.de
+    env_file:
+      - proxy.env
     networks:
       - webproxy
 
